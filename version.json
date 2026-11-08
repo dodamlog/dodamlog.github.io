@@ -1,16 +1,11 @@
 {
-  "versionCode": 3,
-  "versionName": "1.0.0-beta.2",
+  "versionCode": 4,
+  "versionName": "1.0.0-beta.3",
   "date": "2026-11-09",
   "page": "https://dodamlog.github.io/download/",
-  "apk": "https://github.com/dodamlog/dodamlog.github.io/releases/download/v1.0.0-beta.2/dodamlog-1.0.0-beta.2.apk",
+  "apk": "https://github.com/dodamlog/dodamlog.github.io/releases/download/v1.0.0-beta.3/dodamlog-1.0.0-beta.3.apk",
   "notes": [
-    "반려동물을 삭제한 뒤 '인터넷 연결이 끊겼어요'가 뜨던 문제를 고쳤어요",
-    "기록 자세히에서 예정량과 맡은 사람을 함께 볼 수 있어요",
-    "밥·영양 공급의 단위를 고를 수 있어요 (g, mL 등)",
-    "휴대폰 알림이 꺼져 있으면 알려 드려요",
-    "인터넷이 끊겨도 일정 외 기록을 저장해 두었다가 연결되면 보내요",
-    "저장하지 않고 나가려 하면 한 번 더 물어봐요",
-    "그 밖에 문구와 화면을 다듬었어요"
+    "앱을 다시 열 때도 새 버전이 있는지 확인해요",
+    "새 버전 알림 문구를 다듬었어요"
   ]
 }
