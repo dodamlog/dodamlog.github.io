@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.dodamlog.app",
+      "sha256_cert_fingerprints": [
+        "FA:39:9B:A9:48:10:16:29:9D:F9:A1:D4:34:D9:C4:28:BC:1B:ED:74:5E:C2:89:88:3F:F7:83:45:F3:57:B3:95"
+      ]
+    }
+  }
+]

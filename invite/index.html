@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<title>도담일지 가족 초대</title>
+<link rel="icon" href="/assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<main>
+  <header class="site"><img src="/assets/icon-512.png" alt=""><a href="/">도담일지</a></header>
+  <h1>가족 초대가 왔어요</h1>
+  <p>도담일지에서 반려동물을 함께 돌보자는 초대예요.</p>
+
+  <div class="card" id="has-token">
+    <h2 style="margin-top:0">앱이 있다면</h2>
+    <a class="button" id="open-app" href="#">앱에서 초대 열기</a>
+    <p class="muted" id="not-android" hidden>도담일지는 지금 Android에서만 쓸 수 있어요. Android 휴대폰에서 이 링크를 열어 주세요.</p>
+
+    <h2>앱이 없다면</h2>
+    <p id="no-app-hint" class="note" hidden>이 휴대폰에서 도담일지를 찾지 못했어요. 먼저 설치해 주세요.</p>
+    <ol>
+      <li>도담일지를 설치해요. 지금은 시험 운영 중이라 초대한 가족에게 설치 파일을 받아 주세요.</li>
+      <li>설치한 뒤 이 링크를 다시 눌러 주세요. 설치만으로는 초대가 이어지지 않아요.</li>
+    </ol>
+  </div>
+
+  <div class="card" id="no-token" hidden>
+    <p>초대 주소가 올바르지 않아요. 받은 링크를 다시 눌러 주세요.</p>
+  </div>
+
+  <h2>링크가 열리지 않으면</h2>
+  <p>앱 첫 화면에서 <b>초대 코드로 참여</b>를 누르고, 초대 메시지에 함께 온 6자리 코드를 넣어 주세요.</p>
+  <p class="muted">초대는 7일 동안, 한 번만 받을 수 있어요.</p>
+
+  <footer><a href="/privacy/">개인정보처리방침</a><a href="mailto:devick99@gmail.com">문의</a></footer>
+</main>
+<script>
+  (function () {
+    var params = new URLSearchParams(location.search);
+    var token = (params.get('t') || '').trim();
+    if (!/^[A-Za-z0-9_-]{8,128}$/.test(token)) {
+      document.getElementById('has-token').hidden = true;
+      document.getElementById('no-token').hidden = false;
+      return;
+    }
+    if (params.get('noapp') === '1') document.getElementById('no-app-hint').hidden = false;
+    var isAndroid = /Android/i.test(navigator.userAgent);
+    var open = document.getElementById('open-app');
+    if (!isAndroid) {
+      open.hidden = true;
+      document.getElementById('not-android').hidden = false;
+      return;
+    }
+    // 앱이 있으면 앱의 초대 화면으로, 없으면 이 페이지로 돌아와 설치 안내를 강조한다
+    var page = 'https://dodamlog.github.io/invite/?t=' + encodeURIComponent(token);
+    open.href = 'intent://dodamlog.github.io/invite/?t=' + encodeURIComponent(token) +
+      '#Intent;scheme=https;package=com.dodamlog.app;S.browser_fallback_url=' +
+      encodeURIComponent(page + '&noapp=1') + ';end';
+  })();
+</script>
+</body>
+</html>
