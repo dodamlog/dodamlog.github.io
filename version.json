@@ -1,0 +1,13 @@
+{
+  "versionCode": 2,
+  "versionName": "1.0.0-beta.1",
+  "date": "2026-11-08",
+  "page": "https://dodamlog.github.io/download/",
+  "apk": "https://github.com/dodamlog/dodamlog.github.io/releases/download/v1.0.0-beta.1/dodamlog-1.0.0-beta.1.apk",
+  "notes": [
+    "첫 베타 버전이에요",
+    "가족 초대 링크를 누르면 앱이 바로 열려요",
+    "다른 가족에게 할 일을 맡기거나 담당을 바꿀 수 있어요",
+    "새 버전이 나오면 앱에서 알려 줘요"
+  ]
+}
