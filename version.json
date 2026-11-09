@@ -1,12 +1,10 @@
 {
-  "versionCode": 7,
-  "versionName": "1.0.0-beta.6",
+  "versionCode": 8,
+  "versionName": "1.0.0-beta.7",
   "date": "2026-11-09",
   "page": "https://dodamlog.github.io/download/",
-  "apk": "https://github.com/dodamlog/dodamlog.github.io/releases/download/v1.0.0-beta.6/dodamlog-1.0.0-beta.6.apk",
+  "apk": "https://github.com/dodamlog/dodamlog.github.io/releases/download/v1.0.0-beta.7/dodamlog-1.0.0-beta.7.apk",
   "notes": [
-    "기록하거나 바꾸면 다른 탭에도 새로고침 없이 바로 보여요",
-    "다른 가족이 바꾼 내용도 어느 탭에서든 바로 반영돼요",
-    "오늘 화면이 시간에 맞게 바뀌고, 앱으로 돌아오면 최신 내용을 보여 줘요"
+    "완료 묶음을 펼친 뒤 다시 접을 수 있어요"
   ]
 }
