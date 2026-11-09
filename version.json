@@ -1,14 +1,12 @@
 {
-  "versionCode": 6,
-  "versionName": "1.0.0-beta.5",
+  "versionCode": 7,
+  "versionName": "1.0.0-beta.6",
   "date": "2026-11-09",
   "page": "https://dodamlog.github.io/download/",
-  "apk": "https://github.com/dodamlog/dodamlog.github.io/releases/download/v1.0.0-beta.5/dodamlog-1.0.0-beta.5.apk",
+  "apk": "https://github.com/dodamlog/dodamlog.github.io/releases/download/v1.0.0-beta.6/dodamlog-1.0.0-beta.6.apk",
   "notes": [
-    "일정을 길게 눌러 바로 건너뛸 수 있어요",
-    "건너뛸 때 사유는 골라도 되고 안 골라도 돼요. 고르면 오늘 목록에 보여요",
-    "이번만 취소할 때 사유를 묻지 않아요",
-    "바꾼 것 없이 수정을 누르면 수정으로 남지 않아요",
-    "한 번만 고친 기록에도 ‘수정됨’이 보여요"
+    "기록하거나 바꾸면 다른 탭에도 새로고침 없이 바로 보여요",
+    "다른 가족이 바꾼 내용도 어느 탭에서든 바로 반영돼요",
+    "오늘 화면이 시간에 맞게 바뀌고, 앱으로 돌아오면 최신 내용을 보여 줘요"
   ]
 }
